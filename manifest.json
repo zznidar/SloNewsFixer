@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "SloNewsFixer",
+  "version": "0.0.1",
+  "description": "Popravi slabo rabo zaslonskega prostora.",
+  "browser_action": {
+    "default_icon": "slonewsfixer.png"
+  },
+"browser_specific_settings": {
+  "gecko": {
+    "id": "test@slonewsfixer"
+  }
+},
+  "content_scripts": [
+    {
+      "matches": ["https://www.24ur.com/"],
+      "js": ["24ur.js"]
+    },
+    {
+      "matches": ["https://www.rtvslo.si/*"],
+      "js": ["mmc.js"]
+    }
+  ]
+}
