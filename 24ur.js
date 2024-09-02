@@ -16,8 +16,8 @@ async function fp(link) {
 		const tempElement = document.createElement('div');
 		tempElement.innerHTML = html;
 
-		//let fullTitle = tempElement.getElementsByTagName("h1")[0].innerText;
-		let fullTitle = tempElement?.getElementsByTagName("p")[0]?.innerText;
+		let fullTitle = tempElement.getElementsByTagName("h1")[0]?.innerText;
+		//let fullTitle = tempElement?.getElementsByTagName("p")[0]?.innerText; // for testing purposes, shows city and date
 
         if (status !== 200) {
             console.log('Error' + status);

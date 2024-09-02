@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "SloNewsFixer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Popravi slabo rabo zaslonskega prostora.",
   "browser_action": {
     "default_icon": "slonewsfixer.png"
